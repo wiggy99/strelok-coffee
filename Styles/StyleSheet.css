@@ -1,0 +1,92 @@
+﻿* {
+    font-family: Verdana;
+    font-size: 0.5cm;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1cm;
+    font-family: 'Segoe Script';
+    text-align: center;
+    
+}
+h2 {
+    font-size: 1cm;
+    font-family: 'Snap ITC';
+    text-align: center;
+}
+div.a {
+    font-size: 150px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+body {
+    background-color: darkblue;
+    background-image: url(/Images/old-2228749.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+
+
+#outerDiv {
+    
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    padding-left: 20px;
+    min-height: 600px;
+    background-color: rgba(163, 155, 177, 0.80);
+}
+
+
+
+
+nav ul {
+    font-size: 1.3em;
+    background-color: rgb(6, 4, 29);
+    padding: 60px 18px;
+    text-align: center;
+}
+
+    nav ul a {
+        color: white;
+        text-decoration: none;
+
+    }
+
+
+
+nav ul a:hover {
+        color: rgb(53, 68, 211);
+}
+
+.articleImage {
+    width: 680px;
+}
+
+
+
+
+
+@media screen and (max-width:930px) {
+    .articleImage {
+        width: 95%;
+    }
+}
+
+
+
+
+
+body {
+}
