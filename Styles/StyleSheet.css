@@ -15,6 +15,17 @@ h2 {
     font-family: 'Snap ITC';
     text-align: center;
 }
+h3 {
+    font-size: 1cm;
+    font-family: Britannic;
+    text-align: center;
+}
+h5 {
+    font-size: 1cm;
+    font-family: 'Segoe Script';
+    text-align: center;
+    color: darkblue
+}
 div.a {
     font-size: 150px;
 }
@@ -26,6 +37,30 @@ div.a {
     width: 50%;
 }
 
+/*.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}*/
+
+
+
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 
 body {
@@ -36,35 +71,31 @@ body {
 }
 
 
-#menuDiv {
-    
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-    padding-left: 20px;
-    min-height: 600px;
-    background-color: rgba(197, 163, 53, 0.80);
-}
-
 #outerDiv {
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
+    margin-left: 50px;
+    margin-right: 50px;
+    /*margin-top: 1em;*/
     padding-left: 20px;
+    padding-right: 20px;
     min-height: 900px;
-    background-color: #FFFD;
+    background-color: #FFFA;
 }
 
-
-
+#3button {
+    column-count: 3;
+    column-width: 200px;
+}
 
 nav ul {
     font-size: 1.3em;
     background-color: rgb(6, 4, 29);
-    padding: 60px 18px;
+    padding: 50px 18px;
     text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    font-size: 0;
 }
 
     nav ul a {
@@ -92,10 +123,6 @@ nav ul a:hover {
         width: 95%;
     }
 }
-
-
-
-
 
 body {
 }
