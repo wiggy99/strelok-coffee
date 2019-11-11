@@ -29,7 +29,7 @@ div.a {
 
 
 body {
-    background-color: darkblue;
+    background-color: rgba(197, 163, 53, 0.80);
     background-image: url(/Images/old-2228749.jpg);
     background-repeat: repeat-y;
     background-size: cover;
