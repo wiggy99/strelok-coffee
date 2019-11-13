@@ -157,17 +157,10 @@ li {
 }
 
 
-
-
-
 @media screen and (max-width:930px) {
     .articleImage {
         width: 95%;
     }
-}
-
-footer {
-    display: block;
 }
 
 body {
