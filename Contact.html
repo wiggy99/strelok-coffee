@@ -7,11 +7,40 @@
     <script src="Scripts/XSiteControls.js"></script>
 </head>
 <body>
-    <h1>
-    </h1>
+
+    <nav id="menu"></nav>
     <div id="outerDiv">
-        <nav id="menu"></nav>
+
+        <h1>
+            Contact Us
+        </h1>
+        <img class="center" src="Images/contact-us.png">
+        <br><br>
+
+
+        <div class="container">
+            <form action="Contact.html">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <input type="text" id="country" name="countryname" placeholder="Your Country..">
+
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+
     </div>
+    <footer></footer>
 </body>
 
 </html>
