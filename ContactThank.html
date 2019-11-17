@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+
+    <link href="Styles/StyleSheet.css" rel="stylesheet" />
+    <script src="Scripts/XSiteControls.js"></script>
+</head>
+
+<body>
+
+    <nav id="menu"></nav>
+    <div id="outerDiv">
+
+
+        <h1>
+            Thank You For Submitting
+        </h1>
+        <img class="center" src="Images/contact-us.png">
+        <br><br>
+
+
+        <div class="container">
+
+            <form action="ContactThank.html">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." fname="fname" required>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." lname="fname" required>
+
+                <label for="country">Country</label>
+                <input type="text" id="country" name="countryname" placeholder="Your Country.." country="fname" required>
+
+
+                <label for="bean">Choose your coffee roast</label>
+                <select id="country" name="country">
+                    <option value="light">Light Roast</option>
+                    <option value="medium">Medium</option>
+                    <option value="dark">Dark</option>
+                </select>
+
+                <label for="bean">What type of bean would you like</label>
+                <select id="country" name="country">
+                    <option value="arabica">Arabica</option>
+                    <option value="robusta">Robusta</option>
+                    <option value="liberica">Liberica</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+
+    </div>
+    <footer></footer>
+</body>
+
+</html>
