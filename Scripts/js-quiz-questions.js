@@ -3,53 +3,52 @@
 // In the format of {q: QUESTION, o: OPTIONS, a: CORRECT ANSWER}
 var questions = [
     {
-        q: "What is the standard distance between the target and archer in Olympics?",
+        q: "Which roast has the highest coffee content?",
         o: [
-            "50 meters",
-            "70 meters",
-            "100 meters",
-            "120 meters"
+            "Light",
+            "Medium",
+            "Dark",
+            
         ],
-        a: 1 // arrays start with 0, so it is 70 meters
+        a: 0 // arrays start with 0, so it is 70 meters
     },
     {
-        q: "Which is the highest number on a standard roulette wheel?",
+        q: "Which bean grows in Asia?",
         o: [
-            "22",
-            "24",
-            "32",
-            "36"
-        ],
-        a: 3
-    },
-    {
-        q: "How much wood could a woodchuck chuck if a woodchuck would chuck wood?",
-        o: [
-            "400 pounds",
-            "550 pounds",
-            "700 pounds",
-            "750 pounds"
+            "Robusta",
+            "Liberica",
+            "Arabica",
         ],
         a: 2
     },
     {
-        q: "Which is the seventh planet from the sun?",
+        q: "Where did the word frappuccino originate?",
         o: [
-            "Uranus",
-            "Earth",
-            "Pluto",
-            "Mars"
+            "Ethiopia",
+            "Vancouver",
+            "Italy",
+            "Massachusetts"
         ],
-        a: 0
+        a: 2
     },
     {
-        q: "Which is the largest ocean on Earth?",
+        q: "From which US city did Starbucks originate?",
         o: [
-            "Atlantic Ocean",
-            "Indian Ocean",
-            "Arctic Ocean",
-            "Pacific Ocean"
+            "New York",
+            "New Orleans",
+            "Seattle",
+            "Boston"
         ],
         a: 3
+    },
+    {
+        q: "What is an espresso?",
+        o: [
+            "A brewing method where water if forced through coffee grounds",
+            "A type of drink made with steamed milk",
+            "A type of drink made with whipped cream",
+            "A bean that contains a high amount of caffeine"
+        ],
+        a: 0
     }
 ];

@@ -86,6 +86,7 @@ var quiz = {
         }
         html += "</h1>";
         html += "<div>You scored " + score + " out of " + total + ".</div>";
+        //html += "<a href="js-quiz.html">Back to quiz</a>";
         document.getElementById("quiz-wrap").innerHTML = html;
     }
 };
