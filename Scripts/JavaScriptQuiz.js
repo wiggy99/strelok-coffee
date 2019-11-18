@@ -1,105 +1,55 @@
-﻿(function () {
-    function buildQuiz() {
-        // we'll need a place to store the HTML output
-        const output = [];
-
-        // for each question...
-        myQuestions.forEach((currentQuestion, questionNumber) => {
-            // we'll want to store the list of answer choices
-            const answers = [];
-
-            // and for each available answer...
-            for (letter in currentQuestion.answers) {
-                // ...add an HTML radio button
-                answers.push(
-                    `<label>
-            <input type="radio" name="question${questionNumber}" value="${letter}">
-            ${letter} :
-            ${currentQuestion.answers[letter]}
-          </label>`
-                );
-            }
-
-            // add this question and its answers to the output
-            output.push(
-                `<div class="question"> ${currentQuestion.question} </div>
-        <div class="answers"> ${answers.join("")} </div>`
-            );
-        });
-
-        // finally combine our output list into one string of HTML and put it on the page
-        quizContainer.innerHTML = output.join("");
+﻿/* [THE "DATABASE" - QUESTIONS, OPTIONS, ANSWERS] */
+// An array that contains objects
+// In the format of {q: QUESTION, o: OPTIONS, a: CORRECT ANSWER}
+var questions = [
+    {
+        q: "What is the standard distance between the target and archer in Olympics?",
+        o: [
+            "50 meters",
+            "70 meters",
+            "100 meters",
+            "120 meters"
+        ],
+        a: 1 // arrays start with 0, so it is 70 meters
+    },
+    {
+        q: "Which is the highest number on a standard roulette wheel?",
+        o: [
+            "22",
+            "24",
+            "32",
+            "36"
+        ],
+        a: 3
+    },
+    {
+        q: "How much wood could a woodchuck chuck if a woodchuck would chuck wood?",
+        o: [
+            "400 pounds",
+            "550 pounds",
+            "700 pounds",
+            "750 pounds"
+        ],
+        a: 2
+    },
+    {
+        q: "Which is the seventh planet from the sun?",
+        o: [
+            "Uranus",
+            "Earth",
+            "Pluto",
+            "Mars"
+        ],
+        a: 0
+    },
+    {
+        q: "Which is the largest ocean on Earth?",
+        o: [
+            "Atlantic Ocean",
+            "Indian Ocean",
+            "Arctic Ocean",
+            "Pacific Ocean"
+        ],
+        a: 3
     }
-
-    function showResults() {
-        // gather answer containers from our quiz
-        const answerContainers = quizContainer.querySelectorAll(".answers");
-
-        // keep track of user's answers
-        let numCorrect = 0;
-
-        // for each question...
-        myQuestions.forEach((currentQuestion, questionNumber) => {
-            // find selected answer
-            const answerContainer = answerContainers[questionNumber];
-            const selector = `input[name=question${questionNumber}]:checked`;
-            const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-
-            // if answer is correct
-            if (userAnswer === currentQuestion.correctAnswer) {
-                // add to the number of correct answers
-                numCorrect++;
-
-                // color the answers green
-                answerContainers[questionNumber].style.color = "lightgreen";
-            } else {
-                // if answer is wrong or blank
-                // color the answers red
-                answerContainers[questionNumber].style.color = "red";
-            }
-        });
-
-        // show number of correct answers out of total
-        resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-    }
-
-    const quizContainer = document.getElementById("quiz");
-    const resultsContainer = document.getElementById("results");
-    const submitButton = document.getElementById("submit");
-    const myQuestions = [
-        {
-            question: "Who is the strongest?",
-            answers: {
-                a: "Superman",
-                b: "The Terminator",
-                c: "Waluigi, obviously"
-            },
-            correctAnswer: "c"
-        },
-        {
-            question: "What is the best site ever created?",
-            answers: {
-                a: "SitePoint",
-                b: "Simple Steps Code",
-                c: "Trick question; they're both the best"
-            },
-            correctAnswer: "c"
-        },
-        {
-            question: "Where is Waldo really?",
-            answers: {
-                a: "Antarctica",
-                b: "Exploring the Pacific Ocean",
-                c: "Sitting in a tree",
-                d: "Minding his own business, so stop asking"
-            },
-            correctAnswer: "d"
-        }
-    ];
-
-    // display quiz right away
-    buildQuiz();
-
-    // on submit, show results
-    submitButton.addEventListener("click", showResults);
-})();
+];
