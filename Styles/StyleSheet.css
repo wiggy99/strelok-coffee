@@ -204,3 +204,12 @@ input[type=submit] {
     padding: 20px;
 }
 
+#canvasMouse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    cursor: pointer;
+}
