@@ -76,7 +76,7 @@ var quiz = {
 
         // Update and show the score
         // Instead of creating elements, we can also directly alter the inner HTML
-        var html = "<h1>";
+        var html = "<a href='Index.html'>Back to Home</a>" + "<h1>";
         if (percent >= 0.7) {
             html += "WELL DONE!";
         } else if (percent >= 0.4) {
