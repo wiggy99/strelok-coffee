@@ -3,25 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WEVManukauTech(7)", ".", "{041897DC-F39E-49AC-9E12-65DC184BD41C}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "strelok-coffee", ".", "{041897DC-F39E-49AC-9E12-65DC184BD41C}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_54055"
-		Debug.AspNetCompiler.PhysicalPath = "..\WEVManukauTech\"
+		Debug.AspNetCompiler.PhysicalPath = "..\strelok-coffee\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54055\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_54055"
-		Release.AspNetCompiler.PhysicalPath = "..\WEVManukauTech\"
+		Release.AspNetCompiler.PhysicalPath = "..\strelok-coffee\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54055\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "54055"
-		SlnRelativePath = "..\WEVManukauTech\"
+		SlnRelativePath = "..\strelok-coffee\"
 	EndProjectSection
 EndProject
 Global
