@@ -18,7 +18,7 @@
         this.offset = 1;
         this.length = 100;
         this.size = 5;
-        this.color = '#fff';
+        this.color = '#000';
         this.direction = 'grow';
 
         if ('undefined' !== typeof args.position)
@@ -87,7 +87,7 @@
     }
 
     function render() {
-        c.fillStyle = 'rgba( 0, 0, 0, 0.025 )';
+        c.fillStyle = 'rgba( 255, 255, 255, 0.025 )';
         c.fillRect(0, 0, canvas.width, canvas.height);
         for (i = 0; i < 9; i++) {
             rowOne[i].render();
